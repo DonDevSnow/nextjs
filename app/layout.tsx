@@ -1,11 +1,10 @@
-
-
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeModeScript } from "flowbite-react";
 import "./globals.css";
-import { NavBar } from "./components/ui/NavBar";
+import { useEffect } from "react";
+import "flowbite/dist/flowbite.css"
+import Navbar from "./components/ui/NavBar";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -28,7 +27,9 @@ export default function RootLayout({
       <body>
 
         <main className="flex-grow">
-          <NavBar />
+
+          <Navbar />
+
           {children}
         </main>
       </body>
