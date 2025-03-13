@@ -21,7 +21,7 @@ const NavBar = () => {
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
           <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <Image src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" height={50} width={50} />
-            <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">Marion website</span>
+            <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">Title website</span>
           </a>
 
           <button
