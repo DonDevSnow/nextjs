@@ -7,7 +7,7 @@ import Link from "next/link";
 function Footer() {
     return (
 
-        <footer className="left-0 z-20 w-full border-t border-indigo-900 bg-white p-4 shadow-sm dark:border-gray-600 dark:bg-gray-900 md:flex md:items-center md:justify-between md:p-6">
+        <footer className="left-0 z-20 w-full border-t border-indigo-900 bg-customgray p-4 shadow-sm dark:border-gray-600 dark:bg-gray-900 md:flex md:items-center md:justify-between md:p-6">
             <div className="mx-auto max-w-screen-xl text-center">
                 <a href="#" className="flex items-center justify-center font-serif text-2xl text-gray-900 dark:text-white">
                     <svg className="my-2 mr-2 h-5" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">

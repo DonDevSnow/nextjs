@@ -17,7 +17,7 @@ const NavBar = () => {
 
   return (
     <header>
-      <nav className="sticky start-0 top-0 z-20 w-full border-b border-blue-500 bg-white dark:border-gray-600 dark:bg-gray-900">
+      <nav className="sticky start-0 top-0 z-20 w-full border-b border-white bg-customteal  dark:bg-customtealdark">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
           <a
             href="/"
@@ -37,7 +37,7 @@ const NavBar = () => {
                 <linearGradient id="paint8_linear_11430_22515" x1="7.15667" y1="21.5399" x2="14.0824" y2="31.9579" gradientUnits="userSpaceOnUse"><stop stop-color="#0092FF" /><stop offset="1" stop-color="#45B2FF" /></linearGradient>
               </defs>
             </svg>
-            <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
+            <span className="self-center whitespace-nowrap text-2xl font-semibold text-txtlight dark:text-txtdark">
               Marion website
             </span>
           </a>
@@ -45,7 +45,13 @@ const NavBar = () => {
           <button
             onClick={toggleMenu}
             type="button"
-            className="inline-flex size-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+            className="inline-flex size-10 items-center justify-center rounded-lg p-2 text-sm
+               text-customgray
+               hover:bg-gray-200 focus:outline-none focus:ring-2
+               focus:ring-customgray
+               dark:text-txtlight
+               dark:hover:bg-customgray
+               dark:focus:ring-customdark md:hidden"
             aria-controls="navbar-dropdown"
             aria-expanded={isOpen}
           >
@@ -110,13 +116,13 @@ const NavBar = () => {
                   className={`${isDropdownOpen ? "block" : "hidden"} absolute z-10 mx-7 my-4 w-44 divide-y divide-gray-100 rounded border-2 border-solid border-indigo-500 bg-white font-normal shadow-sm dark:divide-gray-600 dark:bg-gray-700`}
                 >
                   <ul
-                    className="pt-2 text-sm text-gray-700 dark:text-gray-200"
+                    className="pt-2 text-sm text-gray-700 dark:text-txtlight"
                     aria-labelledby="doubleDropdownButton"
                   >
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:text-txtlight dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Overview
                       </a>
@@ -124,7 +130,7 @@ const NavBar = () => {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:text-txtlight dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         My downloads
                       </a>
@@ -132,7 +138,7 @@ const NavBar = () => {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:text-txtlight dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Billing
                       </a>
@@ -140,7 +146,7 @@ const NavBar = () => {
                     <li>
                       <a
                         href="#"
-                        className="block px-4 py-2 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                        className="block px-4 py-2 hover:bg-gray-100 dark:text-txtlight dark:hover:bg-gray-600 dark:hover:text-white"
                       >
                         Rewards
                       </a>
@@ -149,7 +155,7 @@ const NavBar = () => {
                   <div className="py-1">
                     <a
                       href="/"
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-txtlight dark:hover:bg-gray-600 dark:hover:text-white"
                     >
                       Sign out
                     </a>

@@ -30,7 +30,7 @@ export default function RootLayout({
         <main className="grow">
 
           <Navbar />
-          <section className="size-full bg-gray-50 dark:bg-gray-200">
+          <section className="size-full bg-custombglight dark:bg-custombgdark">
             {children}
           </section>
           <Footer />

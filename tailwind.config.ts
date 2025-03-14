@@ -9,7 +9,19 @@ const config: Config = {
     flowbite.content(),
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customteal: "#00ADB5",
+        customtealdark: "#007F87",
+        customgray: "#393E46",
+        customdark: "#222831",
+        txtdark: "#0D0D11",
+        txtlight: "#f5f5f5",
+        custombglight: "#e5e8ed",
+        custombgdark: "#353839",
+        // Cards
+      },
+    },
   },
   plugins: [flowbite.plugin()],
 };
