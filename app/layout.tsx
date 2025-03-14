@@ -5,6 +5,7 @@ import "./globals.css";
 import { useEffect } from "react";
 import "flowbite/dist/flowbite.css"
 import Navbar from "./components/ui/NavBar";
+import Footer from "./components/ui/Footer";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,8 +30,11 @@ export default function RootLayout({
         <main className="grow">
 
           <Navbar />
+          <section className="size-full bg-gray-50 dark:bg-gray-200">
+            {children}
+          </section>
+          <Footer />
 
-          {children}
         </main>
       </body>
     </html>

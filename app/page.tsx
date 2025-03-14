@@ -1,8 +1,8 @@
-import JTron from "./components/ui/JTron";
+import HeroSection from "./components/sect/HeroSection";
 export default function Home() {
   return (
     <main>
-      <JTron />
+      <HeroSection />
     </main>
   );
 }
