@@ -77,7 +77,7 @@ const NavBar = () => {
             id="navbar-dropdown"
           >
             {/* Dropdown box */}
-            <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-white md:p-0 md:dark:bg-gray-900 rtl:space-x-reverse">
+            <ul className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium dark:border-gray-700 dark:bg-gray-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:bg-transparent md:p-0 md:dark:bg-transparent rtl:space-x-reverse">
               <li>
                 <a
                   href="/"
@@ -113,8 +113,9 @@ const NavBar = () => {
                 </button>
 
                 <div
-                  className={`${isDropdownOpen ? "block" : "hidden"} absolute z-10 mx-7 my-4 w-44 divide-y divide-gray-100 rounded border-2 border-solid border-indigo-500 bg-white font-normal shadow-sm dark:divide-gray-600 dark:bg-gray-700`}
+                  className={`${isDropdownOpen ? "flex flex-col" : "hidden"} w-fill relative z-10 mx-3 mt-1 divide-y divide-gray-100 rounded border-2 border-solid  border-indigo-500 bg-white font-normal shadow-sm dark:divide-gray-600 dark:bg-gray-700`}
                 >
+
                   <ul
                     className="pt-2 text-sm text-gray-700 dark:text-txtlight"
                     aria-labelledby="doubleDropdownButton"
