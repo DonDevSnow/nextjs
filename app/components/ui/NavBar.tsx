@@ -17,7 +17,7 @@ const NavBar = () => {
 
   return (
     <header>
-      <nav className="sticky start-0 top-0 z-20 w-full border-b border-white bg-customteal  dark:bg-customtealdark">
+      <nav className="sticky start-0 top-0 z-20 w-full bg-light-primary  dark:bg-dark-primarydark">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
           <a
             href="/"
@@ -37,7 +37,7 @@ const NavBar = () => {
                 <linearGradient id="paint8_linear_11430_22515" x1="7.15667" y1="21.5399" x2="14.0824" y2="31.9579" gradientUnits="userSpaceOnUse"><stop stop-color="#0092FF" /><stop offset="1" stop-color="#45B2FF" /></linearGradient>
               </defs>
             </svg>
-            <span className="self-center whitespace-nowrap text-2xl font-semibold text-txtlight dark:text-txtdark">
+            <span className="self-center whitespace-nowrap text-2xl font-semibold text-light-textlight dark:text-dark-textdark">
               Marion website
             </span>
           </a>
@@ -113,8 +113,14 @@ const NavBar = () => {
                 </button>
 
                 <div
-                  className={`${isDropdownOpen ? "flex flex-col" : "hidden"} w-fill relative z-10 mx-3 mt-1 divide-y divide-gray-100 rounded border-2 border-solid  border-indigo-500 bg-white font-normal shadow-sm dark:divide-gray-600 dark:bg-gray-700`}
+                  className={`${isDropdownOpen ? "flex flex-col" : "hidden"} mx-3 mt-2 space-y-2  divide-gray-100 rounded-lg border-2 
+                  border-solid
+                  border-indigo-500 
+                  bg-white p-3 opacity-100 
+                  dark:border-gray-600 
+                  dark:bg-gray-700 md:absolute md:right-0 md:mt-0 md:w-44`}
                 >
+
 
                   <ul
                     className="pt-2 text-sm text-gray-700 dark:text-txtlight"

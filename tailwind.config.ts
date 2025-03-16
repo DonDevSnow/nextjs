@@ -11,6 +11,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        moon: "#d2b5f2",
+        biloba: "#ba7feb",
+        mediump: "#8156d7",
+        purp: "#4c40ce",
+        govenor: "#3f2ec2",
+
+        light: {
+          primary: "#346ec7",
+          textlight: "#ffffff",
+        },
+
+        dark: {
+          primarydark: "#174790",
+          textdark: "#000000",
+        },
+
+        cards: {},
         customteal: "#00ADB5",
         customtealdark: "#007F87",
         customgray: "#393E46",
@@ -18,7 +35,7 @@ const config: Config = {
         txtdark: "#0D0D11",
         txtlight: "#f5f5f5",
         custombglight: "#e5e8ed",
-        custombgdark: "#353839",
+        gray_dark: "#353839",
         // Cards
       },
     },
