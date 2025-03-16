@@ -27,15 +27,15 @@ export default function RootLayout({
       </head>
       <body>
 
-        <main className="grow">
 
-          <Navbar />
-          <section className="size-full bg-custombglight dark:bg-custombgdark">
-            {children}
-          </section>
-          <Footer />
 
-        </main>
+        <Navbar />
+
+        {children}
+
+        <Footer />
+
+
       </body>
     </html>
   );
