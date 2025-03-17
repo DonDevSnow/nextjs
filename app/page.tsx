@@ -1,3 +1,4 @@
+import NewsLetter from "./components/mix/NewsLetter";
 import AccordionSection from "./components/sect/AccordionSection";
 import CarouselSection from "./components/sect/CarouselSection";
 import HeroSection from "./components/sect/HeroSection";
@@ -13,6 +14,8 @@ export default function Home() {
       <StepperSection />
 
       <CarouselSection />
+
+      <NewsLetter />
 
     </main>
   );
